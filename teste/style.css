@@ -1,0 +1,165 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(206, 191, 191);
+}
+#home {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(104, 37, 76);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/************************************ SOMA VALORES ***************************************************/
+.teste1 {
+  background-color: rgba(107, 71, 141, 0.764);
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 25px;
+  color: rgba(19, 4, 23, 0.902);
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+input {
+  font: normal 20pt arial;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid rgb(79, 25, 99);
+}
+
+#btnSomar {
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#resultado {
+  font-size: 16px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+/************************************ Multas ***************************************************/
+
+.teste2 {
+  background-color: rgba(140, 16, 140, 0.445);
+  margin-top: 25px;
+  padding: 17px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-size: 25px;
+  color: rgba(19, 4, 23, 0.891);
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+.p {
+  color: blueviolet;
+}
+
+#btnveri {
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/************************************ País ***************************************************/
+
+.home3 {
+  background-color: rgba(183, 9, 35, 0.848);
+  padding: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h4 {
+  font-size: 25px;
+  color: rgba(19, 4, 23, 0.891);
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+#bnt {
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/************************************ Hora ***************************************************/
+.home4 {
+  background-color: rgba(205, 27, 145, 0.848);
+  padding: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h5 {
+  font-size: 25px;
+  color: rgba(19, 4, 23, 0.891);
+  padding-left: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#btnhora {
+  font-size: 15px;
+  padding: 8px 3px 8px 3px;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+#hora {
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+/************************************ VOTO IDADE ***************************************************/
+.home5 {
+  background-color: rgba(205, 27, 27, 0.848);
+  padding: 17px;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h7 {
+  font-size: 24px;
+  color: rgba(19, 4, 23, 0.891);
+  padding-left: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#idade {
+  font-size: 20px;
+  padding-left: 17px;
+  margin-top: 15px;
+}
+
+#bntvalidar {
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}

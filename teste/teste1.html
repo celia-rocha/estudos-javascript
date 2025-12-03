@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      // var nome = prompt("Hello, qual o seu nome?");
+
+      // alert("Foi um enorme prazer em te conhecer " + nome + "!!");
+    </script>
+
+    <div id="home">
+      <h1>Testando meu conhecimento em JavaScript.</h1>
+    </div>
+
+    <!-- ============================== SCRIPT: SOMA DE NÚMEROS =================================== -->
+    <div class="teste1">
+      <h2>Somando Valores:</h2>
+      <input type="number" name="txtn1" id="txtn1" />
+      <input type="number" name="txtn2" id="txtn2" />
+      <input type="button" id="btnSomar" value="Somar" onclick="somar()" />
+
+      <div id="resultado">Resultado:</div>
+    </div>
+    <script>
+      function somar() {
+        var tn1 = document.getElementById("txtn1");
+        var tn2 = document.getElementById("txtn2");
+        var resultado = document.getElementById("resultado");
+        var n1 = Number(tn1.value);
+        var n2 = Number(tn2.value); // agora bate com tn2
+        var s = n1 + n2;
+        resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a: ${s}`;
+      }
+    </script>
+
+    <!-- ============================== SCRIPT: SISTEMA DE MULTAS =================================== -->
+    <div class="teste2">
+      <h3>Sistema de Multas</h3>
+
+      Velocidade do carro:
+      <input type="number" name="multas" id="multas" /> km/h
+      <input
+        type="button"
+        id="btnveri"
+        value="Verificar"
+        onclick="calcular()"
+      />
+
+      <div id="velocidade"></div>
+
+      <script>
+        function calcular() {
+          var multas = document.querySelector("input#multas");
+          var velocidade = document.querySelector("div#velocidade");
+          var vel = Number(multas.value);
+
+          velocidade.innerHTML = `<p>Sua velocidade atual é <strong>${vel}km/h</strong><p>`;
+
+          if (vel > 10) {
+            velocidade.innerHTML += `<p>Você foi multado por excesso de velocidade</p>`;
+          }
+          velocidade.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`;
+        }
+      </script>
+    </div>
+    <!-- ============================== SCRIPT: QUAL SEU PAÍS =================================== -->
+
+    <div class="home3">
+      <h4>Bem vindo ao seu País</h4>
+
+      Qual País você mora?: <input type="text" name="pais" id="pais" />
+
+      <input type="button" id="bnt" value="Verificar" onclick="verificar()" />
+
+      <div id="divResultado"></div>
+
+      <script>
+        function verificar() {
+          var pais = document.querySelector("input#pais");
+          var divResultado = document.querySelector("div#divResultado");
+          var vindo = pais.value;
+
+          if (vindo == "brasil") {
+            divResultado.innerHTML = `<p>Você é Brasileiro</p>`;
+          } else {
+            divResultado.innerHTML = `<p>Você é Estrangeiro</p>`;
+          }
+        }
+      </script>
+    </div>
+    <!-- ============================== SCRIPT: HORA ATUAL =================================== -->
+
+    <div class="home4">
+      <h5>Verificador de Hora:</h5>
+
+      <input
+        type="button"
+        id="btnhora"
+        value="Verificar Hora"
+        onclick="soudar()"
+      />
+
+      <div id="hora"></div>
+
+      <script>
+        function soudar() {
+          var agora = new Date();
+          var hora = agora.getHours();
+          var divHora = document.querySelector("div#hora");
+
+          if (hora < 12) {
+            divHora.innerHTML = `Agora são ${hora}h, Bom dia!!`;
+          } else if (hora < 18) {
+            divHora.innerHTML = `Agora são ${hora}h, Boa Tarde!!`;
+          } else if (hora < 23) {
+            divHora.innerHTML = `Agora são ${hora}h, Boa Noite!!`;
+          }
+        }
+      </script>
+    </div>
+    <!-- ============================== SCRIPT: IDADE PARA VOTAR =================================== -->
+    <div class="home5">
+      <h7>Verificação de idade para votação:</h7>
+
+      <input type="text" name="inputIdade" id="inputIdade" />
+
+      <input
+        type="button"
+        id="bntvalidar"
+        value="Verificar"
+        onclick="validar()"
+      />
+
+      <div id="idade"></div>
+
+      <script>
+        function validar() {
+          var inputIdade = document.querySelector("input#inputIdade");
+          var idade = document.querySelector("div#idade");
+          var idadeAtual = Number(inputIdade.value);
+
+          if (idadeAtual < 16) {
+            idade.innerHTML = `Você tem ${idadeAtual} anos e é menor de idade`;
+          } else if (idadeAtual >= 16 && idadeAtual < 18) {
+            idade.innerHTML = `Você tem ${idadeAtual} anos e pode votar (opcional)`;
+          } else {
+            idade.innerHTML = `Você tem ${idadeAtual} anos e o voto é obrigatório`;
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
