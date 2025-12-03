@@ -1,4 +1,4 @@
-#Exercícios de JavaScript
+# 💻 Exercícios de JavaScript
 
 Praticando fundamentos de JavaScript através de mini projetos.
 
